@@ -1,0 +1,20 @@
+
+
+
+@mixin mobile 
+    @media only screen and (max-width : 420px) 
+        @content
+    
+
+
+@mixin ipad 
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+        @content
+    
+@mixin mq($var...)
+    @if length($var) == 1
+        @media only screen and (max-width : 420px) 
+            @content
+    @if length($var) == 2
+        @media only screen and (min-device-width : nth($var,1)) and (max-device-width : nth($var,2))
+            @content

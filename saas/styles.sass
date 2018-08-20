@@ -1,0 +1,34 @@
+@import 'mq'
+@import 'utils'
+@import '../src/Components/navBar/XNavBar'
+@import '../src/Components/WorkshopDetails/WorkshopDetails'
+@import '../src/Components/MainTitle/MainTitle'
+@import '../src/Components/Deliverables/Deliverables'
+@import '../src/Components/Organizers/Organizers'
+@import '../src/Components/RegistrationDetails/RegistrationDetails'
+@import '../src/Components/VenueSection/Venue'
+
+
+
+// @include mq(0px,1100px)
+// @include mq(0px,900px)
+// @include mobile
+
+.space-parallax
+    height: 500px
+
+.map > div
+    width: 100%
+    height: 500px
+    margin: 0 auto
+
+
+@include mobile
+    .map > div
+        width: 90%
+        height: 400px
+    .space-parallax
+        height: 300px
+
+
+

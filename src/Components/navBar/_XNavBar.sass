@@ -1,0 +1,30 @@
+.NavBrandLogo
+    width: 200px
+    height: 80px
+    object-fit: contain
+
+.navbar
+    position: fixed
+    left: 0px
+    top: 0px
+    background: red
+
+.nav-link
+    color: black !important
+    font-family: "AvenirLight"
+    margin: 10px
+    width: 100px
+    text-align: center
+    &:hover
+        background: rgb(237,71,71)
+        color: white !important
+    
+@include mq(0px,900px)
+    .nav-link
+        width: 100%
+        text-align: left        
+        &:hover
+            background: white
+            color: black !important
+
+

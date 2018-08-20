@@ -1,0 +1,85 @@
+.venue-container
+    background: $secondaryColor
+    padding: 80px 0px
+    color: white 
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    font-family: "AvenirMedium"
+
+
+.venue-info-container
+    margin-top: 80px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+.venue-text-section
+    width: 30%
+    margin-left: 150px
+    color: $primaryColor
+
+.venue-text-title
+    font-size: 38px
+
+.venue-text-location
+    font-size: 20px
+
+.venue-vertical-line
+    width: 1px
+    background: white
+
+.venue-contact-container
+    display: flex
+    flex-direction: column
+    margin-left: 50px
+
+.venue-contact-title
+    width: 50%
+    font-size: 26px
+
+.venue-contact-section
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    
+.venue-contact
+    margin-right: 50px
+
+.venue-horizontal-line
+    width: 80%
+    height: 1px
+    margin: 0 auto
+    background: white
+    margin-top: 30px
+
+.venue-company
+    width: 100%
+    text-align: center
+    padding: 50px
+    padding-bottom: 0px
+
+    
+@include mq(0px,900px)
+    .venue-vertical-line
+        display: none
+    .venue-text-section
+        margin: 0 auto
+        margin-left: 50px
+    .venue-contact-container
+        margin-left: 0px
+
+@include mobile
+    .venue-text-section
+        margin: 0 auto
+    .venue-text-section
+        width: 70%
+        margin: 0 auto
+    .venue-contact-container
+        padding: 50px
+        padding-top: 10px
+        
+        
+    
+        
+        

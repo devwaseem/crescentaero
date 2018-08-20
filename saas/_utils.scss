@@ -1,0 +1,81 @@
+$primaryColor: rgb(237,71,71);
+$secondaryColor:rgb(21,27,43);
+
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+ 
+// scale
+@mixin scale($scale) {
+	 @include transform(scale($scale));
+} 
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+	     -o-transform-origin: $origin;
+	    -ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+	  @content;
+	}
+	@-moz-keyframes #{$animationName} {
+	  @content;
+	}
+	@-o-keyframes #{$animationName} {
+	  @content;
+	}
+	@keyframes #{$animationName} {
+	  @content;
+	}
+  }
+  @mixin animate($name, $duration, $iteration, $direction) {
+	-webkit-animation-duration: $duration;
+	   -moz-animation-duration: $duration;
+		 -o-animation-duration: $duration;
+			animation-duration: $duration;
+	-webkit-animation-iteration-count: $iteration;
+	   -moz-animation-iteration-count: $iteration;
+		 -o-animation-iteration-count: $iteration;
+			animation-iteration-count: $iteration;
+	-webkit-animation-name: $name;
+	   -moz-animation-name: $name;
+		 -o-animation-name: $name;
+			animation-name: $name;
+	-webkit-animation-direction: $direction;
+	   -moz-animation-direction: $direction;
+		 -o-animation-direction: $direction;
+			animation-direction: $direction;
+	}
+	
+	@mixin user-select($prop){
+		-ms-user-select: $prop;
+		-moz-user-select: $prop;
+		user-select: $prop;
+		-webkit-user-select: $prop;
+	}
+
+	@mixin shadow($a){
+		-webkit-box-shadow: $a ;
+    -moz-box-shadow: $a;
+    box-shadow: $a;
+	}

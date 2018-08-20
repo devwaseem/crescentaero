@@ -1,0 +1,383 @@
+.NavBrandLogo {
+  width: 200px;
+  height: 80px;
+  object-fit: contain; }
+
+.navbar {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: red; }
+
+.nav-link {
+  color: black !important;
+  font-family: "AvenirLight";
+  margin: 10px;
+  width: 100px;
+  text-align: center; }
+  .nav-link:hover {
+    background: #ed4747;
+    color: white !important; }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 900px) {
+  .nav-link {
+    width: 100%;
+    text-align: left; }
+    .nav-link:hover {
+      background: white;
+      color: black !important; } }
+
+.workshop-detail-container {
+  padding-bottom: 100px;
+  background: #ed4747;
+  color: white;
+  font-family: "AvenirMedium";
+  padding-top: 60px; }
+  .workshop-detail-container p {
+    margin-left: 100px;
+    margin-right: 10px; }
+
+.workshop-detail-title {
+  font-size: 60px;
+  font-family: "AvenirBlack";
+  text-align: center;
+  margin-bottom: 60px;
+  margin-left: 0px !important;
+  margin-right: 0px !important; }
+
+.workshop-detail-sections {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 22px; }
+  .workshop-detail-sections div {
+    display: flex;
+    flex-direction: column; }
+
+.workshop-detail-datetime span {
+  font-family: "AvenirBlack"; }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1100px) {
+  .workshop-detail-sections {
+    font-size: 30px; }
+    .workshop-detail-sections div {
+      margin-top: 30px; } }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 900px) {
+  .workshop-detail-title {
+    margin-bottom: 20px; } }
+
+@media only screen and (max-width: 420px) {
+  .workshop-detail-title {
+    font-size: 32px; }
+  .workshop-detail-container p {
+    margin-left: 55px;
+    margin-right: 50px; }
+  .workshop-detail-sections {
+    font-size: 20px; } }
+
+.main-title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 700px; }
+  .main-title-section p {
+    width: 70%;
+    color: white;
+    padding-left: 40px; }
+
+.title-oneDay {
+  margin-top: 50px;
+  font-size: 32px;
+  font-family: "AvenirMedium"; }
+
+.title-workshopname {
+  font-size: 56px;
+  padding-right: 180px;
+  font-family: "AvenirBlack"; }
+
+.register-button {
+  font-family: "AvenirMedium";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ed4747;
+  color: white;
+  width: 150px;
+  height: 50px;
+  transition: box-shadow 0.3s ease-in-out;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none; }
+  .register-button:hover {
+    -webkit-box-shadow: 0px 0px 35px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 35px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 35px -8px rgba(0, 0, 0, 0.75); }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1100px) {
+  .title-oneDay {
+    font-size: 26px; }
+  .title-workshopname {
+    font-size: 44px;
+    padding-right: 100px; } }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 900px) {
+  .title-oneDay {
+    font-size: 22px; }
+  .title-workshopname {
+    font-size: 38px;
+    padding-right: 0px; } }
+
+@media only screen and (max-width: 420px) {
+  .main-title-section p {
+    padding-left: 0px; }
+  .title-oneDay {
+    font-size: 22px; }
+  .title-workshopname {
+    font-size: 32px; } }
+
+.deliverables-container {
+  font-family: "AvenirMedium";
+  font-size: 18px;
+  color: #ed4747;
+  padding: 100px 150px; }
+
+.line {
+  background: #ed4747;
+  height: 2px;
+  width: 80%;
+  margin: 20px 0px; }
+
+.deliverables-title {
+  font-size: 42px;
+  font-family: "AvenirBlack"; }
+
+@media only screen and (max-width: 420px) {
+  .deliverables-container {
+    padding: 100px 30px; }
+  .deliverables-title {
+    font-size: 32px; } }
+
+.organizers-container {
+  overflow: hidden;
+  background: #151b2b;
+  color: white; }
+
+.organizers-images-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.organizers-images-section {
+  position: relative;
+  width: 30%;
+  height: 500px;
+  margin: 50px 50px;
+  overflow: hidden; }
+
+.organizer-image {
+  width: 100%;
+  height: 100%;
+  z-index: 0; }
+
+.organizers-overlay {
+  color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  top: 0px;
+  text-align: center;
+  font-family: "AvenirBlack";
+  font-size: 20px; }
+  .organizers-overlay p:nth-child(1) {
+    margin-top: 50%;
+    padding: 10px 10px; }
+
+.organizers-title-container {
+  margin: 0 auto;
+  padding: 0px 250px; }
+
+.organizers-title {
+  padding-top: 60px;
+  font-size: 60px;
+  font-family: "AvenirBlack"; }
+
+.organizers-dept {
+  font-size: 30px;
+  font-family: "AvenirMedium"; }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1100px) {
+  .organizers-title-container {
+    padding: 0px 200px; } }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 900px) {
+  .organizers-images-section {
+    width: 60%; } }
+
+@media only screen and (max-width: 420px) {
+  .organizers-title-container {
+    padding: 0px 50px; }
+  .organizers-title {
+    font-size: 40px; }
+  .organizers-images-section {
+    width: 100%;
+    height: 330px; } }
+
+.registration-container {
+  color: white;
+  font-family: "AvenirMedium";
+  background: #ed4747;
+  padding-bottom: 100px; }
+  .registration-container p {
+    padding-left: 150px;
+    padding-right: 50px; }
+  .registration-container p:nth-child(1) {
+    font-size: 40px;
+    font-family: "AvenirBlack";
+    text-align: center;
+    padding: 70px 0px;
+    padding-bottom: 40px; }
+  .registration-container p:nth-child(2), .registration-container p:nth-child(5), .registration-container p:nth-child(7), .registration-container p:nth-child(9) {
+    font-size: 30px;
+    font-family: "AvenirBlack"; }
+  .registration-container p:nth-child(9), .registration-container p:nth-child(14) {
+    margin-top: 50px; }
+  .registration-container p:nth-child(10), .registration-container p:nth-child(11), .registration-container p:nth-child(12), .registration-container p:nth-child(13) {
+    font-family: "AvenirMedium";
+    font-size: 20px; }
+    .registration-container p:nth-child(10) span, .registration-container p:nth-child(11) span, .registration-container p:nth-child(12) span, .registration-container p:nth-child(13) span {
+      margin-right: 20px;
+      font-family: "AvenirBlack"; }
+  .registration-container p:nth-child(14) {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 0px;
+    padding: 0px; }
+
+.registration-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-aroundf;
+  flex-wrap: wrap;
+  width: 30%;
+  margin: 0 auto; }
+
+.registration-button {
+  background: white;
+  color: black;
+  margin: 0 auto;
+  margin-top: 60px; }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1100px) {
+  .registration-container p {
+    padding-left: 80px; } }
+
+@media only screen and (max-width: 420px) {
+  .registration-button-container {
+    width: 70%; }
+  .registration-container p {
+    padding-left: 50px; }
+  .registration-container p:nth-child(1) {
+    font-size: 30px; }
+  .registration-container p:nth-child(2), .registration-container p:nth-child(5), .registration-container p:nth-child(7) {
+    font-size: 22px; } }
+
+.venue-container {
+  background: #151b2b;
+  padding: 80px 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "AvenirMedium"; }
+
+.venue-info-container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.venue-text-section {
+  width: 30%;
+  margin-left: 150px;
+  color: #ed4747; }
+
+.venue-text-title {
+  font-size: 38px; }
+
+.venue-text-location {
+  font-size: 20px; }
+
+.venue-vertical-line {
+  width: 1px;
+  background: white; }
+
+.venue-contact-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px; }
+
+.venue-contact-title {
+  width: 50%;
+  font-size: 26px; }
+
+.venue-contact-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.venue-contact {
+  margin-right: 50px; }
+
+.venue-horizontal-line {
+  width: 80%;
+  height: 1px;
+  margin: 0 auto;
+  background: white;
+  margin-top: 30px; }
+
+.venue-company {
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 0px; }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 900px) {
+  .venue-vertical-line {
+    display: none; }
+  .venue-text-section {
+    margin: 0 auto;
+    margin-left: 50px; }
+  .venue-contact-container {
+    margin-left: 0px; } }
+
+@media only screen and (max-width: 420px) {
+  .venue-text-section {
+    margin: 0 auto; }
+  .venue-text-section {
+    width: 70%;
+    margin: 0 auto; }
+  .venue-contact-container {
+    padding: 50px;
+    padding-top: 10px; } }
+
+.space-parallax {
+  height: 500px; }
+
+.map > div {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 420px) {
+  .map > div {
+    width: 90%;
+    height: 400px; }
+  .space-parallax {
+    height: 300px; } }

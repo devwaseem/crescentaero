@@ -1,0 +1,64 @@
+.registration-container
+    color: white
+    font-family: "AvenirMedium"
+    background: $primaryColor
+    padding-bottom: 100px
+    p
+        padding-left: 150px
+        padding-right: 50px
+    p:nth-child(1)
+        font-size: 40px
+        font-family: "AvenirBlack"
+        text-align: center
+        padding: 70px 0px
+        padding-bottom: 40px
+    p:nth-child(2),p:nth-child(5),p:nth-child(7),p:nth-child(9)
+        font-size: 30px
+        font-family: "AvenirBlack"
+    p:nth-child(9),p:nth-child(14)
+        margin-top: 50px
+    p:nth-child(10),p:nth-child(11),p:nth-child(12),p:nth-child(13)
+        font-family: "AvenirMedium"
+        font-size: 20px
+        span
+            margin-right: 20px
+            font-family: "AvenirBlack"
+    p:nth-child(14)
+        font-size: 30px
+        text-align: center
+        margin-left: 0px
+        padding: 0px
+
+
+
+.registration-button-container
+    display: flex
+    flex-direction: row
+    justify-content: space-aroundf
+    flex-wrap: wrap
+    width: 30%
+    margin: 0 auto
+    
+.registration-button
+    background: white
+    color: black
+    margin: 0 auto
+    margin-top: 60px
+
+@include mq(0px,1100px)
+    .registration-container
+        p
+            padding-left: 80px
+
+@include mobile
+    .registration-button-container
+        width: 70%
+    .registration-container
+        p
+            padding-left: 50px
+    .registration-container
+        p:nth-child(1)
+            font-size: 30px
+        p:nth-child(2),p:nth-child(5),p:nth-child(7)
+            font-size: 22px
+
